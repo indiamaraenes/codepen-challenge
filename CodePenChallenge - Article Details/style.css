@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 4vh;
+  background: #fff;
+}
+
+article,
+footer {
+  --article-height: 100%;
+  --article-ratio: 1.5;
+  width: calc(var(--article-height) / var(--article-ratio));
+  height: var(--article-height);
+  box-sizing: border-box;
+  padding: 0px 20px;
+  margin: auto;
+  position: relative;
+}
+header {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+header h1 {
+  font-size: 14vh;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+header hr {
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+}
+header hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #000;
+  color: #000;
+  text-align: center;
+}
+header hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+.hero-image {
+  border: double 5px #000;
+  box-shadow: #333 0px 0px 5px;
+}
+
+img[class^="editorial-image"] {
+  width: 50%;
+  height: auto;
+  margin: 0 20px;
+  border-radius: 50% 50% 50% 50%;
+  border: double 5px #000;
+  box-shadow: #333 0px 0px 5px;
+}
+
+.editorial-image-left {
+  float: left;
+}
+
+.editorial-image-right {
+  float: right;
+}
+
+h2{
+  font-size: 1.5em;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+.arrow-highlight{
+  position:relative;
+  margin:0;
+  padding:0;
+}
+.arrow-highlight:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  width:calc(100% - 0.5em);
+  border-left-color:transparent;
+}
+.arrow-highlight:after{
+  content:"";
+  z-index:-1;
+  right:0;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+  transform:rotate(180deg);
+  transform-origin:center right;
+}
+
+p {
+  font-weight: 100;
+  color: #000;
+  line-height: 1.5em;
+  margin: auto;
+  padding: 10px;
+}
+.pullquote {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5em;
+  margin: auto;
+  padding: 10px;
+  font-style: italic;
+}
+.pullquote::before {
+  content: "“";
+  font-size: 4vh;
+  font-family: "Lora", serif;
+  font-weight: 900;
+  color: #333;
+  line-height: 1.5em;
+  margin: auto;
+  padding: 10px;
+}
+.pullquote::after {
+  content: "”";
+  font-size: 4vh;
+  font-family: "Lora", serif;
+  font-weight: 900;
+  color: #333;
+  line-height: 1.5em;
+  margin: auto;
+  padding: 10px;
+}
+
+footer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+footer p {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-media a {
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.social-media .fa-github {
+  font-size: 2em;
+}
+footer hr {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+footer hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #000;
+  color: #000;
+  text-align: center;
+}
+footer hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}

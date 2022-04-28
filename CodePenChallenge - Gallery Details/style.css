@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Square+Peg&display=swap");
+
+body {
+  background-image: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  background-repeat: no-repeat;
+}
+header {
+  padding: 0 30px;
+  text-align: center;
+}
+h1 {
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+}
+.gallery {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  grid-template-rows: auto;
+  margin-top: 20px;
+}
+
+figure img {
+  border: solid 0.5px #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+figure {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  -moz-box-shadow: 0px 2px 15px #333;
+  -webkit-box-shadow: 0px 2px 15px #333;
+  -o-box-shadow: 0px 2px 15px #333;
+  background-color: #fff;
+}
+#figure1 {
+  -webkit-transform: rotate(-5deg);
+  z-index: 1;
+}
+#figure2 {
+  -webkit-transform: rotate(10deg);
+  z-index: 2;
+}
+#figure3 {
+  -webkit-transform: rotate(-3deg);
+  z-index: 2;
+}
+#figure4 {
+  -webkit-transform: rotate(-15deg);
+  z-index: 1;
+}
+#figure5 {
+  -webkit-transform: rotate(5deg);
+  z-index: 1;
+}
+#figure6 {
+  -webkit-transform: rotate(-3deg);
+  z-index: 1;
+}
+figcaption {
+  font-family: "Square Peg", cursive;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
